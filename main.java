@@ -18,17 +18,13 @@ public class main extends JavaPlugin{
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
         if(cmd.getName().equalsIgnoreCase("p")){
             if(args.length==1){//데이터 타입 확인을 안해주었기 때문에 정수가 아닌 문자를 넣을 시 오류 발생!
-
                 int a = Integer.valueOf(args[0]);
-                sender.sendMessage(a + "입니다!");
-
+                sender.sendMessage( a++ + "입니다!");
             }
-            if(args.length==2){//데이터 타입 확인을 안해주었기 때문에 정수가 아닌 문자를 넣을 시 오류 발생!
-
+            else if(args.length==2){//데이터 타입 확인을 안해주었기 때문에 정수가 아닌 문자를 넣을 시 오류 발생!
                 int a = Integer.valueOf(args[0]);
                 int b = Integer.valueOf(args[1]);
-                sender.sendMessage(a+b + "입니다!");
-
+                sender.sendMessage(a-b + "입니다!");
             }
             else{
                 sender.sendMessage("명령어가 완전하지 않아요!");
