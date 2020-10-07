@@ -1,0 +1,6 @@
+name: Test
+version: 1
+main: main
+commands:
+  p:
+    description: 테스트용!
