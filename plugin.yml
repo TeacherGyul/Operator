@@ -3,4 +3,4 @@ version: 1
 main: main
 commands:
   p:
-description: 테스트용!
+    description: 테스트용!
